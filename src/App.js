@@ -1,20 +1,16 @@
 import './App.css';
-import React from "react"; 
-import SecClass from './SecClass';
+import React, { useState} from "react"; 
+import Parant from './Parant'
+import counterContext from './CounterContext';
 function App() {
+     const counter = useState(0)
+
   return (
+    <counterContext.Provider value={counter} >
     <div className="App">
-      <h3>We use Props within parent and child system  </h3>
-      <SecClass class="10th class Exam" time="21th" />
-      <br />
-      <hr/>
-      <SecClass class="11th class Exam"  time="22th" /> 
-      <br />
-      <hr/>
-      <SecClass class="12th class Exam"  time="23th" /> 
-      <br />
-      <hr/>
+      <Parant />
     </div>     
+    </counterContext.Provider>
   );
 }
 
