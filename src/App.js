@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React from "react"; 
+import SecClass from './SecClass';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <h3>We use Props within parent and child system  </h3>
+      <SecClass class="10th class Exam" time="21th" />
+      <br />
+      <hr/>
+      <SecClass class="11th class Exam"  time="22th" /> 
+      <br />
+      <hr/>
+      <SecClass class="12th class Exam"  time="23th" /> 
+      <br />
+      <hr/>
+    </div>     
   );
 }
 
